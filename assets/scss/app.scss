@@ -4,3 +4,28 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
 }
+
+.select{
+  background: #fff;
+  margin: 0;
+}
+
+.select:hover{
+  background: #eee;
+  margin: 0;
+}
+
+.list{
+  list-style: none;
+}
+
+.selected{
+  color: red;
+  margin: 0;
+}
+
+.info{
+  margin: 0;
+  display: inline-block;
+  min-width: 80px;
+}

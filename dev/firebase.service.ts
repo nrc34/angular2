@@ -8,7 +8,7 @@ export class FirebaseService {
     fbRef: any;
     animals:IAnimal[];
     snapshot:any;
-    isFirstTimeLoad:boolean;
+    public isFirstTimeLoad:boolean;
 
     constructor(){
         this.animals = [];
@@ -29,11 +29,6 @@ export class FirebaseService {
             console.log(JSON.parse(snapshot.val()));
             if(!this.isFirstTimeLoad)
             this.animals.push(JSON.parse(snapshot.val()));
-            // for(var item in snapshot.val()){
-            //     console.log(this.snapshot[item]);
-            //     this.animals.push(JSON.parse(this.snapshot[item]));
-            //     console.log(JSON.parse(this.snapshot[item]));
-            // }
         });
         this.isFirstTimeLoad = false;
     }
